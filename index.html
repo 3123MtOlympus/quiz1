@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./Develop/styles.css">
+</head>
+
+<body>
+    <div class="start-page">
+        <h1>Code Quiz</h1>
+        <button id="startButton">Start Quiz</button>
+    </div>
+
+    <div class="quiz-page" style="display: none;">
+        <div class="qa_box">
+            <div class="qa_header">
+                <span>Score: <span id="score">0</span></span>
+                <span id="countdown">0</span>
+            </div>
+            <div class="qa_body">
+                    <div class="qa_set active">
+                        <h4>1. How many STATES are in the US?</h4>
+        
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a1" valid="valid">
+                            <span>50 States</span>
+                        </div>
+        
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a1">
+                            <span>25 States</span>
+                        </div>
+        
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a1">
+                            <span>13 States</span>
+                        </div>
+        
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a1">
+                            <span>56 States</span>
+                        </div>
+                    </div>
+        
+                    <div class="qa_set">
+                        <h4>2. What is the capital city of the US?</h4>
+        
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a2">
+                            <span>Los Angeles</span>
+                        </div>
+        
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a2">
+                            <span>Miami</span>
+                        </div>
+        
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a2">
+                            <span>New York City</span>
+                        </div>
+        
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a2" valid="valid">
+                            <span>Washington DC</span>
+                        </div>
+                    </div>
+        
+                    <div class="qa_set">
+                        <h4>3. Which city is known for the Golden Gate Bridge?</h4>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a3">
+                            <span>Dallas</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a3">
+                            <span>Orlando</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a3" valid="valid">
+                            <span>San Francisco</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a3">
+                            <span>Detriot</span>
+                        </div>
+                    </div>
+        
+                    <div class="qa_set">
+                        <h4>4. Who was the first president of the US?</h4>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a4">
+                            <span>Abraham Lincoln</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a4">
+                            <span>Barack Obama</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a4">
+                            <span>Bill Clinton</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a4" valid="valid">
+                            <span>George Washington</span>
+                        </div>
+                    </div>
+        
+                    <div class="qa_set">
+                        <h4>5. Which document declared the United States' independence from Great Britain?</h4>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a5" valid="valid">
+                            <span>Declaration of Independence</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a5">
+                            <span>The US Constitution</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a5">
+                            <span>The Emancipation of Proclamation</span>
+                        </div>
+                        <div class="qa_ans_row">
+                            <input type="radio" name="a5">
+                            <span>The Gettysburg Address</span>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="qa_footer">
+                <button class="btn1" id="skip">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="end-page">
+        <h2>Quiz Complete!</h2>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <form id="scoreForm">
+          <label for="initials">Enter Your Initials:</label>
+          <input type="text" id="initials" required maxlength="3" />
+          <button type="submit" id="saveScoreButton">Save Score</button>
+        </form>
+      </div>
+
+    <script src="./Develop/script.js"></script>
+</body>
+
+</html>

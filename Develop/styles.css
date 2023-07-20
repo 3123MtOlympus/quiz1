@@ -1,0 +1,116 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: blanchedalmond;
+    color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.qa_box {
+    width: 599px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: saddlebrown;
+    box-shadow: bisque;
+    border-radius: 15px;
+}
+
+.qa_header {
+    background-color: saddlebrown;
+    color: sandybrown;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 0;
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+}
+
+.qa_set {
+    display: none;
+}
+
+.qa_set.active {
+    display: block;
+    ;
+}
+
+.qa_set h4 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.qa_ans_row {
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.qa_ans_row input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.qa_ans_row span {
+    display: block;
+    padding: 8px 15px;
+    background-color: sandybrown;
+    border-radius: 15px 15px;
+    transition: all .3s ease-out;
+}
+.qa_ans_row:hover span {
+    background-color: blanchedalmond;
+    color: sandybrown;
+}
+.qa_ans_row input:checked + span {
+    background-color: orangered;
+    color: black;
+}
+.qa_ans_row input[valid]:checked + span {
+    background-color: green;
+    color:yellow;
+}
+
+.end-page {
+    color: brown
+}
+
+.qa_footer{
+    padding: 10px 0 0;
+    text-align: left;
+}
+.btn1 {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: ghostwhite;
+    color: sandybrown;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    font-weight: 900;
+}
+.btn1:hover{
+    background-color: aliceblue;
+    ;
+}
+
+.startButton {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: ghostwhite;
+    color: sandybrown;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    font-weight: 900;
+}
